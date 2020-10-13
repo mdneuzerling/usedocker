@@ -1,0 +1,27 @@
+test_that("from_ubuntu accepts only valid Ubuntu versions", {
+  expect_true(is_valid_ubuntu_version("latest"))
+  expect_true(is_valid_ubuntu_version("devel"))
+  expect_true(is_valid_ubuntu_version("rolling"))
+  expect_true(is_valid_ubuntu_version("trusty"))
+  expect_true(is_valid_ubuntu_version("groovy"))
+  expect_true(is_valid_ubuntu_version("18.04"))
+  expect_true(is_valid_ubuntu_version("18.10"))
+  expect_true(is_valid_ubuntu_version("20.04"))
+  expect_true(is_valid_ubuntu_version("20.10"))
+  expect_true(is_valid_ubuntu_version("30.04")) # some future version of Ubuntu
+  expect_true(is_valid_ubuntu_version("30.10"))
+  expect_false(is_valid_ubuntu_version("18.05"))
+  expect_false(is_valid_ubuntu_version("180.05"))
+  expect_false(is_valid_ubuntu_version("18.100"))
+  expect_false(is_valid_ubuntu_version("exuberant"))
+})
+
+test_that("from_rocker accepts only valid R versions", {
+  expect_true(is_valid_r_version("latest"))
+  expect_true(is_valid_r_version("devel"))
+  expect_true(is_valid_r_version("3.6.0"))
+  expect_true(is_valid_r_version("3.6.2"))
+  expect_true(is_valid_r_version("4.0.0"))
+  expect_true(is_valid_r_version("4.0.1"))
+  expect_false(is_valid_r_version("4.0"))
+})
