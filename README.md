@@ -25,10 +25,10 @@ library(magrittr)
 example <- from_rocker(version = "3.6.2") %>% 
   install_system_dependencies(
     make,
-  	libsodium-dev,
-  	libicu-dev,
-  	libcurl4-openssl-dev,
-  	libssl-dev
+    libsodium-dev,
+    libicu-dev,
+    libcurl4-openssl-dev,
+    libssl-dev
   ) %>% 
   install_r_packages(plumber, promises, future) %>% 
   docker_env(use_ssl = FALSE) %>% 
