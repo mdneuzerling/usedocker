@@ -18,3 +18,5 @@ Imports:
     magrittr
 Suggests: 
     testthat
+URL: https://github.com/mdneuzerling/usedocker
+BugReports: https://github.com/mdneuzerling/usedocker/issues
