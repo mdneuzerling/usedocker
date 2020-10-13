@@ -1,7 +1,7 @@
 
 # usedocker
 
-This is an **abandoned** packages that I intended to use for simplifying the creation of Dockerfiles for R projects. Please don't use this package. Use [dockyard](https://github.com/thebioengineer/dockyard) instead.
+This is an **abandoned** package that I intended to use for simplifying the creation of Dockerfiles for R projects. Please don't use this package. Use [dockyard](https://github.com/thebioengineer/dockyard) instead.
 
 While I don't think this package should ever be installed, it may be have some useful code that can be harvested.
 
